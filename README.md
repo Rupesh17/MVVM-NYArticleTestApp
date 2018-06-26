@@ -19,7 +19,7 @@ We used MVVM Design pattern and swift genric approach to develop this applicatio
 ## Installing
 
 * Installation by cloning the repository
-* Install SDWebImageView Cocopods
+* Install dependcy SDWebImageView using Cocopods
 
 
 ## Running the tests
