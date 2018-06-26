@@ -7,10 +7,12 @@ We'll be using the most viewed section of this API.
 http://api.nytimes.com/svc/mostpopular/v2/mostviewed/{section}/{period}.json?apikey= sample-key To test this API, 
 For testAPI we used 
 * all-sections for the section path component in the URL
-* 7 for period 
+* 7 for period
+
 This is configurable in Constants.Swift file in Project. 
 We used MVVM Design pattern and swift genric approach to develop this application.
 
+App screen shot:
 
 ![alt text](https://user-images.githubusercontent.com/15336778/41942524-581bb344-79bd-11e8-9ee3-e189dda31a9e.png)
 
