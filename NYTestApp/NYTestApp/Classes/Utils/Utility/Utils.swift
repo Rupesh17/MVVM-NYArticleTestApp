@@ -15,7 +15,7 @@ class Utils
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-DD"
         guard let date = dateFormatter.date(from:dateString) else {
-            fatalError("ERROR: Date conversion failed due to mismatched format.")
+            NSLog("Date conversion failed due to mismatched format.")
             return NSDate()
         }
         return date as NSDate
