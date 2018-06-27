@@ -34,8 +34,8 @@
 		E8E6564920E29AC30002B8D8 /* ArticleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6564820E29AC30002B8D8 /* ArticleViewModelTests.swift */; };
 		E8E6564B20E29C880002B8D8 /* NewsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6564A20E29C870002B8D8 /* NewsDataSourceTests.swift */; };
 		E8E6564D20E29E690002B8D8 /* ServiceHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6564C20E29E690002B8D8 /* ServiceHelperTests.swift */; };
-		E8E6564F20E29F720002B8D8 /* NewsDataTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6564E20E29F720002B8D8 /* NewsDataTestCase.swift */; };
 		E8E6565120E2C0C70002B8D8 /* NewsDetailUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6565020E2C0C70002B8D8 /* NewsDetailUIViewController.swift */; };
+		E8F61C4220E3274400971C4D /* NewsDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F61C4120E3274400971C4D /* NewsDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +94,8 @@
 		E8E6564820E29AC30002B8D8 /* ArticleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModelTests.swift; sourceTree = "<group>"; };
 		E8E6564A20E29C870002B8D8 /* NewsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataSourceTests.swift; sourceTree = "<group>"; };
 		E8E6564C20E29E690002B8D8 /* ServiceHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelperTests.swift; sourceTree = "<group>"; };
-		E8E6564E20E29F720002B8D8 /* NewsDataTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataTestCase.swift; sourceTree = "<group>"; };
 		E8E6565020E2C0C70002B8D8 /* NewsDetailUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailUIViewController.swift; sourceTree = "<group>"; };
+		E8F61C4120E3274400971C4D /* NewsDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDataTests.swift; sourceTree = "<group>"; };
 		FF32313F0C83BEAE3645ECD6 /* Pods-NYTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTestApp/Pods-NYTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,7 +187,7 @@
 			children = (
 				E87586F520E237B900757312 /* NYTestAppTests.swift */,
 				E8E6564A20E29C870002B8D8 /* NewsDataSourceTests.swift */,
-				E8E6564E20E29F720002B8D8 /* NewsDataTestCase.swift */,
+				E8F61C4120E3274400971C4D /* NewsDataTests.swift */,
 				E8E6564C20E29E690002B8D8 /* ServiceHelperTests.swift */,
 				E8E6564820E29AC30002B8D8 /* ArticleViewModelTests.swift */,
 				E87586F720E237B900757312 /* Info.plist */,
@@ -661,9 +661,9 @@
 			files = (
 				E8E6564920E29AC30002B8D8 /* ArticleViewModelTests.swift in Sources */,
 				E87586F620E237B900757312 /* NYTestAppTests.swift in Sources */,
+				E8F61C4220E3274400971C4D /* NewsDataTests.swift in Sources */,
 				E8E6564B20E29C880002B8D8 /* NewsDataSourceTests.swift in Sources */,
 				E8E6564D20E29E690002B8D8 /* ServiceHelperTests.swift in Sources */,
-				E8E6564F20E29F720002B8D8 /* NewsDataTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
