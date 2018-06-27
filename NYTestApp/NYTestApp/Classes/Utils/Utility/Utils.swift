@@ -13,7 +13,7 @@ class Utils
     static func getDateFromString(dateString:String) -> NSDate?
     {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-DD"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
         guard let date = dateFormatter.date(from:dateString) else {
             NSLog("Date conversion failed due to mismatched format.")
             return NSDate()
@@ -24,7 +24,7 @@ class Utils
     static func getStringFromDate(date:Date) -> String?
     {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-DD" //Your New Date format as per requirement change it own
+        dateFormatter.dateFormat = "yyyy-MM-dd" //Your New Date format as per requirement change it own
         let newDate = dateFormatter.string(from: date) //pass Date here
         return newDate //New formatted Date string
     }
