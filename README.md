@@ -12,11 +12,11 @@ For testAPI we used
 This is configurable in Constants.Swift file in Project. 
 We used MVVM Design pattern and swift genric approach to develop this application.
 
-App screen shot:
-![alt text](https://user-images.githubusercontent.com/15336778/41969529-57717e98-7a25-11e8-886a-d9cd73ca164c.png)
-![alt text](https://user-images.githubusercontent.com/15336778/41942524-581bb344-79bd-11e8-9ee3-e189dda31a9e.png)
 
-![alt text](https://user-images.githubusercontent.com/15336778/41942525-585c62cc-79bd-11e8-8858-d20be50b49bc.png)
+App Screen Shots:
+
+![alt text](https://user-images.githubusercontent.com/15336778/41969529-57717e98-7a25-11e8-886a-d9cd73ca164c.png)
+![alt text](https://user-images.githubusercontent.com/15336778/41973436-8f10d832-7a32-11e8-9244-bc21bee3b596.png)
 
 ## Installing
 
