@@ -10,6 +10,7 @@
 		75A74A0770EAC9ACFCABE866 /* Pods_NYTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EE66248A92D5A1000066BD /* Pods_NYTestAppUITests.framework */; };
 		811BFCF1F3425D3804A29EE0 /* Pods_NYTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65779F05D85924CB6FAEB7 /* Pods_NYTestApp.framework */; };
 		DAEB0B295B1048B999A2890C /* Pods_NYTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B719115AAC30A496D09730 /* Pods_NYTestAppTests.framework */; };
+		E856FA9320E3949000F34734 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = E856FA9220E3949000F34734 /* sample.json */; };
 		E87586F620E237B900757312 /* NYTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87586F520E237B900757312 /* NYTestAppTests.swift */; };
 		E875870120E237B900757312 /* NYTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E875870020E237B900757312 /* NYTestAppUITests.swift */; };
 		E875872620E2392400757312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E875871020E2392400757312 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		80EE66248A92D5A1000066BD /* Pods_NYTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FA64CBC78C83AB78A58DF9 /* Pods-NYTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTestAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTestAppUITests/Pods-NYTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1B719115AAC30A496D09730 /* Pods_NYTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E856FA9220E3949000F34734 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		E87586DD20E237B900757312 /* NYTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E87586EC20E237B900757312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E87586F120E237B900757312 /* NYTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 			children = (
 				E87586F520E237B900757312 /* NYTestAppTests.swift */,
 				E8E6564A20E29C870002B8D8 /* NewsDataSourceTests.swift */,
+				E856FA9220E3949000F34734 /* sample.json */,
 				E8F61C4120E3274400971C4D /* NewsDataTests.swift */,
 				E8E6564C20E29E690002B8D8 /* ServiceHelperTests.swift */,
 				E8E6564820E29AC30002B8D8 /* ArticleViewModelTests.swift */,
@@ -469,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E856FA9320E3949000F34734 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
