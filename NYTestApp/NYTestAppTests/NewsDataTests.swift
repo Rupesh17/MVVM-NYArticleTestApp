@@ -1,5 +1,5 @@
 //
-//  NewsDataTestCase.swift
+//  NewsDataTests.swift
 //  NYTestAppTests
 //
 //  Created by Rupesh Kumar on 26/06/18.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import NYTestApp
 
-class NewsDataTestCase: XCTestCase {
+class NewsDataTests: XCTestCase {
     
     func testParseEmptyNewsData() {
         
@@ -18,7 +18,7 @@ class NewsDataTestCase: XCTestCase {
         let data = Data()
         
         // giving completion after parsing
-        // expected valid converter with valid data
+        // expected valid NewsData with   valid Article data
         let completion : ((Result<NewsData, ErrorResult>) -> Void) = { result in
             switch result {
             case .success(_):
@@ -36,7 +36,7 @@ class NewsDataTestCase: XCTestCase {
         // giving a wrong dictionary
         let dictionary = ["test" : 123 as AnyObject]
         
-        // expected to return error of converter
+        // expected to return error of NewsData
         let result = NewsData.parseObject(dictionary: dictionary)
         
         switch result {
