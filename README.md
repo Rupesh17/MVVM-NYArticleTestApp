@@ -21,20 +21,23 @@ App screen shot:
 ## Installing
 
 * Installation by cloning the repository
-* Install dependcy SDWebImageView using Cocopods
+* Go to directory
+* use command + B or Product -> Build to build the project
+* Incase of build fail due to dependcy SDWebImageView, install SDWebImageView using Cocopods
+* Press run icon in Xcode or command + R to run the project on Simulator
 
 
 ## Running the tests
 
 Follow the steps to get test case reports:
-*Enable coverge Data:
+* Enable coverge Data:
 ![alt text](https://user-images.githubusercontent.com/15336778/41942528-5910661e-79bd-11e8-96fd-1c5f1c37163a.png)
 
 
 ![alt text](https://user-images.githubusercontent.com/15336778/41942526-58980566-79bd-11e8-8ddb-66d18a5658ec.png)
 
 
-
+* Tap on covergae tab to view test case coverge.
 
 ## Design pattern used
 MVVM:
