@@ -30,7 +30,7 @@ struct Article
     var imageUrl:String?
     var publishedDate:Date!
     var byLineString:String?
-    var captionInfo:String?
+    var abstractInfo:String?
 
 
     init?(articleDict:Dictionary<String,Any>)
@@ -41,13 +41,13 @@ struct Article
         
         self.name = articleDict[kServerDataJSONKeyTitle] as! String
         self.byLineString = articleDict[kServerDataJSONKeyByLine] as? String
-        
+        self.abstractInfo = articleDict[kServerDataJSONKeyAbstract] as? String
+
         if let dateString = articleDict[kServerDataJSONKeyPublishedDate] as? String {
             self.publishedDate = Utils.getDateFromString(dateString: dateString)! as Date
         }
         
         if let media = articleDict[kServerDataJSONKeyMedia] as? [Dictionary<String,Any>] {
-            self.captionInfo = media.first?[kServerDataJSONKeyCaption] as? String
             if let media_metaData = media.first?[kServerDataJSONKeyMediaMetaData] as? [Dictionary<String,Any>] {
                 self.imageUrl = media_metaData.first?[kServerDataJSONKeyImageURL] as? String
             }

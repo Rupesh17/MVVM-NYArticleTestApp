@@ -13,7 +13,7 @@ class GenericDataSource<T> : NSObject {
     var data: DynamicValue<[T]> = DynamicValue([])
 }
 
-class NewsDataSource : GenericDataSource<Article>, UITableViewDataSource {
+class NewsDataSource : GenericDataSource<ArticleCellViewModel>, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -30,8 +30,8 @@ class NewsDataSource : GenericDataSource<Article>, UITableViewDataSource {
         cell.configCellUI()
 
         // Set cell data
-        let article = self.data.value[indexPath.row]
-        cell.article = article
+        let articleCellVM = self.data.value[indexPath.row]
+        cell.articleCellVM = articleCellVM
         return cell
     }
 }

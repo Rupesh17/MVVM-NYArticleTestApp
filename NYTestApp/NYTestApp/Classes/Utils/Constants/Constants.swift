@@ -15,7 +15,7 @@ let kServerDataJSONKeyByLine:String  = "byline"
 let kServerDataJSONKeyPublishedDate:String  = "published_date"
 let kServerDataJSONKeyMedia:String  = "media"
 let kServerDataJSONKeyResult:String  = "results"
-let kServerDataJSONKeyCaption:String  = "caption"
+let kServerDataJSONKeyAbstract:String  = "abstract"
 let kServerDataJSONKeyMediaMetaData:String  = "media-metadata"
 let kServerDataJSONKeyImageURL:String  = "url"
 
@@ -39,3 +39,7 @@ let kPrimaryBackGroundColor = UIColor.lightGray
 
 //String constants
 let kNewsTitleString = "NY Times Most Popular"
+let kOkButtonTitle = "OK"
+let kNoNetworkErrorMessgae = "Internet is not availble. please check your internet setting and try again."
+let kNetworkErrorMessgae = "Network error occurred!. Please check your internet and try again."
+let kAPIParseErrorMessgae = "An error occurred while processing response!. Please check your internet setting and try again later"

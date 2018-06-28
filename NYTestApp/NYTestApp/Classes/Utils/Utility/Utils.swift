@@ -28,5 +28,9 @@ class Utils
         let newDate = dateFormatter.string(from: date) //pass Date here
         return newDate //New formatted Date string
     }
+    
+    static func isConnectedToNetwork() -> Bool {
+        return (Reachability()?.isReachable)!
+    }
 }
 

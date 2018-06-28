@@ -9,10 +9,10 @@
 import Foundation
 struct ArticleViewModel {
     
-    weak var dataSource : GenericDataSource<Article>?
+    weak var dataSource : GenericDataSource<ArticleCellViewModel>?
     weak var service: ServiceHelperProtocol?
     
-    init(service: ServiceHelperProtocol = ServiceHelper.shared, dataSource : GenericDataSource<Article>?) {
+    init(service: ServiceHelperProtocol = ServiceHelper.shared, dataSource : GenericDataSource<ArticleCellViewModel>?) {
         self.dataSource = dataSource
         self.service = service
     }
@@ -30,10 +30,11 @@ struct ArticleViewModel {
                 switch result {
                 case .success(let metaData) :
                     // reload data
-                    let articles = metaData.articles ?? []
+                    var articles = metaData.articles ?? []
+                    
                     // Sort Articles on the bases of date.
-                    self.dataSource?.data.value = articles.sorted(by: { $0.publishedDate > $1.publishedDate })
-
+                    articles = articles.sorted(by: { $0.publishedDate > $1.publishedDate })
+                    self.dataSource?.data.value = self.getArticleCellViewModelsWith(articles: articles)
                     completion?(Result.success(true))
                     
                     break
@@ -45,5 +46,16 @@ struct ArticleViewModel {
                 }
             }
         }
+    }
+    
+    func  getArticleCellViewModelsWith(articles:[Article]) -> [ArticleCellViewModel]
+    {
+        var articalCellVMList:[ArticleCellViewModel] = []
+        for article in articles {
+            let articleCellViewModel = ArticleCellViewModel(article: article)
+            articalCellVMList.append(articleCellViewModel)
+        }
+        
+        return articalCellVMList
     }
 }

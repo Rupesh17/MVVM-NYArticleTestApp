@@ -24,7 +24,7 @@ class RequestHandler {
                         break
                     case .failure(let error) :
                         print("Network error \(error)")
-                        completion(.failure(.network(string: "Network error " + error.localizedDescription)))
+                        completion(.failure(.network(string: kNetworkErrorMessgae)))
                         break
                     }
                 })
@@ -44,7 +44,7 @@ class RequestHandler {
                         break
                     case .failure(let error) :
                         print("Network error \(error)")
-                        completion(.failure(.network(string: "Network error " + error.localizedDescription)))
+                        completion(.failure(.network(string: "Network error: " + error.localizedDescription)))
                         break
                     }
                 })

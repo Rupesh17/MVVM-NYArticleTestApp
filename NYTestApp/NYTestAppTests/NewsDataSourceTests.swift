@@ -42,10 +42,9 @@ class NewsDataSourceTests: XCTestCase {
     func testValueInDataSource() {
         
         // giving data value
-        let dummyArticle1 = Article(articleDict: ["title":"My title1"])
-        let dummyArticle2 = Article(articleDict: ["title":"My title2"])
-
-        dataSource.data.value = [dummyArticle1!, dummyArticle2!]
+        let dummyArticleCellVM1 = ArticleCellViewModel(article: Article(articleDict: ["title":"My title1"])!)
+        let dummyArticleCellVM2 = ArticleCellViewModel(article: Article(articleDict: ["title":"My title2"])!)
+        dataSource.data.value = [dummyArticleCellVM1, dummyArticleCellVM2]
         
         let tableView = UITableView()
         tableView.dataSource = dataSource
@@ -60,8 +59,8 @@ class NewsDataSourceTests: XCTestCase {
     func testValueCell() {
         
         // giving data value
-        let dummyArticle1 = Article(articleDict: ["title":"My title1"])
-        dataSource.data.value = [dummyArticle1!]
+        let dummyArticleCellVM1 = ArticleCellViewModel(article: Article(articleDict: ["title":"My title1"])!)
+        dataSource.data.value = [dummyArticleCellVM1]
         
         let tableView = UITableView()
         tableView.dataSource = dataSource
