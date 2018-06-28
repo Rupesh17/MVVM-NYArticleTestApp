@@ -17,20 +17,18 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var dateIcon:UIImageView!
     @IBOutlet weak var articleIcon:UIImageView!
 
-    var article : Article? {
+    var articleCellVM : ArticleCellViewModel? {
         didSet {
             
-            guard let article = article else {
+            guard let articleCellVM = articleCellVM else {
                 return
             }
             
-            titleLabel?.text = article.name
-            byLineLabel?.text = article.byLineString
-            if let date = article.publishedDate {
-                dateLabel?.text = Utils.getStringFromDate(date: date)
-           }
+            titleLabel?.text = articleCellVM.title
+            byLineLabel?.text = articleCellVM.byLineString
+            dateLabel?.text = Utils.getStringFromDate(date: articleCellVM.publishedDate)
             
-            if let urlStr = article.imageUrl {
+            if let urlStr = articleCellVM.imageUrl {
                 let url = URL(string: urlStr)
                 //Image Cache using SDWebImage
                 articleIcon.sd_setShowActivityIndicatorView(true)

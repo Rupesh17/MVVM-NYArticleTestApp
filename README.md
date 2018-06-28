@@ -15,8 +15,12 @@ We used MVVM Design pattern and swift genric approach to develop this applicatio
 
 App Screen Shots:
 
- ![alt text](https://user-images.githubusercontent.com/15336778/41969529-57717e98-7a25-11e8-886a-d9cd73ca164c.png)
- ![alt text](https://user-images.githubusercontent.com/15336778/41973436-8f10d832-7a32-11e8-9244-bc21bee3b596.png)
+ ![alt text](https://user-images.githubusercontent.com/15336778/42052619-db489406-7b2c-11e8-8235-f70d52de66af.png)
+ 
+ ![alt text](https://user-images.githubusercontent.com/15336778/42052611-d8fd002e-7b2c-11e8-83f8-fded1945c085.png)
+ 
+ ![alt text](https://user-images.githubusercontent.com/15336778/42052620-db949446-7b2c-11e8-8c70-36acb8cdab6a.png)
+
 
 ## Installing
 
@@ -31,13 +35,17 @@ App Screen Shots:
 
 Follow the steps to get test case reports:
 * Enable coverge Data:
-![alt text](https://user-images.githubusercontent.com/15336778/41942528-5910661e-79bd-11e8-96fd-1c5f1c37163a.png)
 
 
-![alt text](https://user-images.githubusercontent.com/15336778/41942526-58980566-79bd-11e8-8ddb-66d18a5658ec.png)
+![alt text](https://user-images.githubusercontent.com/15336778/42052639-ecb7c888-7b2c-11e8-8931-637b49a0d0d2.png)
+
+
+
+![alt text](https://user-images.githubusercontent.com/15336778/42052638-ec70c69a-7b2c-11e8-983c-527378e3da27.png)
 
 
 * Tap on covergae tab to view test case coverge.
+
 
 ## Design pattern used
 MVVM:

@@ -26,7 +26,7 @@ final class RequestService {
         
         let task = session.dataTask(with: request) { (data, response, error) in
             if let error = error {
-                completion(.failure(.network(string: "An error occured during request :" + error.localizedDescription)))
+                completion(.failure(.network(string: kNetworkErrorMessgae + error.localizedDescription)))
                 return
             }
             

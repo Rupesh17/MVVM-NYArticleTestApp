@@ -13,7 +13,7 @@ import XCTest
 class ArticleViewModelTests: XCTestCase {
     
     var viewModel : ArticleViewModel!
-    var dataSource : GenericDataSource<Article>!
+    var dataSource : GenericDataSource<ArticleCellViewModel>!
     fileprivate var service : MockServiceHelper!
     var viewModelWithArticles : ArticleViewModel!
     fileprivate var serviceWithArticle : MockServiceHelperWithArticle!
@@ -23,7 +23,7 @@ class ArticleViewModelTests: XCTestCase {
         super.setUp()
         self.service = MockServiceHelper()
         self.serviceWithArticle = MockServiceHelperWithArticle()
-        self.dataSource = GenericDataSource<Article>()
+        self.dataSource = GenericDataSource<ArticleCellViewModel>()
         self.viewModel = ArticleViewModel(service: service, dataSource: dataSource)
         self.viewModelWithArticles = ArticleViewModel(service: serviceWithArticle, dataSource: dataSource)
     }
