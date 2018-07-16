@@ -15,7 +15,7 @@ struct NewsData {
 extension NewsData: Parsable {
     static func parseObject(dictionary: [String : AnyObject]) -> Result<NewsData, ErrorResult> {
         if let results = dictionary["results"] as? [[String: Any]] {
-            let articles = results.map({ Article(articleDict: $0)}).flatMap{$0}
+            let articles = results.map({ Article(articleDict: $0)}).compactMap{$0}
             let meta = NewsData(articles: articles)
             return Result.success(meta)
         } else {
