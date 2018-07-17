@@ -1,4 +1,4 @@
-app_identifier("com.mcompany.NYTestAppTests") # The bundle identifier of your app
+app_identifier("com.mcompany.NYTestApp") # The bundle identifier of your app
 # apple_id("[[APPLE_ID]]") # Your Apple email address
 
 
