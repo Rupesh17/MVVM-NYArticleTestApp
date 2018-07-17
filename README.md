@@ -36,7 +36,7 @@ App Screen Shots:
 ## CI/CD
 Xcode Server + Fastlane combination  is used for CI/CD.
 * Xcode server is setup on local development machine with a new user
-* Xcode Bot is setup on development machine with git configration using master branch. Botrun periodically  once per-day and do the following task:
+* Xcode Bot is setup on development machine with git configration using master branch. Bot run periodically  once per-day and do the following task:
     * Pull changes from remote repository if there any.
     * Run unit test cases.
     * Run UI Test cases.
@@ -45,10 +45,10 @@ Xcode Server + Fastlane combination  is used for CI/CD.
     * We did not setup for exporting the build or code-singing for now as iTunes
     credential required. Once credential is there we can setup these activity.
 
-Fastlane is setup on Xcode server and integrated in development project also for following activity (Lane)
-    * Generating Test report
-    * Generating screen shot.
-    * We did not setup code-singing for now as iTunesConnect credential required. Once credential is there we can setup these activity.
+Fastlane is setup on Xcode server and integrated in development project also for following activity (Lane):
+* Generating Test report
+* Generating screen shot.
+* We did not setup code-singing for now as iTunesConnect credential required. Once credential is there we can setup these activity.
 
     
 ![alt text](https://user-images.githubusercontent.com/15336778/42815271-952b0cb2-89e4-11e8-81e4-f31ccf255bca.png)
