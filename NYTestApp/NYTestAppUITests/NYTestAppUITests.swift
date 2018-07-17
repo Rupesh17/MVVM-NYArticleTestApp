@@ -31,15 +31,22 @@ class NYTestAppUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testAppUI() {
+    func testAppArticleListScreenUI() {
         snapshot("App Screenshot Launch with indicator")
-        snapshot("before load", waitForLoadingIndicator: false)
         snapshot("after load", waitForLoadingIndicator: true)
         let cells = app.tables.cells
-        
-        let firstCell = cells.element(boundBy: 0)
-        firstCell.tap()
-        snapshot("detail view")
+        XCTAssertTrue(cells.count > 0)
     }
     
+    func testAppArticleDetailsScreenUIWithCell() {
+        let cells = app.tables.cells
+        if cells.count > 0 {
+            let firstCell = cells.element(boundBy: 0)
+            firstCell.tap()
+            snapshot("detail view")
+        }
+        else {
+            XCTAssertFalse(cells.count > 0)
+        }
+    }
 }

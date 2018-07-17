@@ -31,20 +31,41 @@ App Screen Shots:
 * Press run icon in Xcode or command + R to run the project on Simulator
 
 
-## Running the tests
+* Tap on covergae tab to view test case coverge.
+
+## CI/CD
+Xcode Server + Fastlane combination  is used for CI/CD.
+* Xcode server is setup on local development machine with a new user
+* Xcode Bot is setup on development machine with git configration using master branch. Botrun periodically  once per-day and do the following task:
+    * Pull changes from remote repository if there any.
+    * Run unit test cases.
+    * Run UI Test cases.
+    * Run the Static analyser for leaks and warnings.
+    * Generate the report for UnitTest,UITest,Static analyser on project codebase.
+    * We did not setup for exporting the build or code-singing for now as iTunes
+    credential required. Once credential is there we can setup these activity.
+
+Fastlane is setup on Xcode server and integrated in development project also for following activity (Lane)
+    * Generating Test report
+    * Generating screen shot.
+    * We did not setup code-singing for now as iTunesConnect credential required. Once credential is there we can setup these activity.
+
+    
+![alt text](https://user-images.githubusercontent.com/15336778/42815271-952b0cb2-89e4-11e8-81e4-f31ccf255bca.png)
+
+![alt text](https://user-images.githubusercontent.com/15336778/42815274-95a5a576-89e4-11e8-9a32-5e065c256d13.png)
+
+![alt text](https://user-images.githubusercontent.com/15336778/42815273-955fe176-89e4-11e8-9341-6d99f4cbff8d.png)
+
+
+## Running the tests manually 
 
 Follow the steps to get test case reports:
 * Enable coverge Data:
 
-
 ![alt text](https://user-images.githubusercontent.com/15336778/42052639-ecb7c888-7b2c-11e8-8931-637b49a0d0d2.png)
 
-
-
 ![alt text](https://user-images.githubusercontent.com/15336778/42052638-ec70c69a-7b2c-11e8-983c-527378e3da27.png)
-
-
-* Tap on covergae tab to view test case coverge.
 
 
 ## Design pattern used
