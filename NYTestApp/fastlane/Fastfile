@@ -20,7 +20,7 @@ platform :ios do
   lane :screenshots do
     capture_screenshots(workspace: "NYTestApp.xcworkspace", scheme: "NYTestAppUITests")
   end
-  lane : tests do
-    run_tests(workspace: "NYTestApp.xcworkspace", scheme: "NYTestAppTests")
+  lane :tests do
+	run_tests(workspace: "NYTestApp.xcworkspace", scheme: "NYTestAppTests")
   end
 end
