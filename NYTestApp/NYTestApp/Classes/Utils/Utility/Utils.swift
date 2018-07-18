@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Reachability
 
 class Utils
 {
@@ -30,7 +31,7 @@ class Utils
     }
     
     static func isConnectedToNetwork() -> Bool {
-        return (Reachability()?.isReachable)!
+        return (Reachability()?.connection != .none)
     }
 }
 

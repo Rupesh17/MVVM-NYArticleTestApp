@@ -28,7 +28,6 @@
 		E8E6563A20E299850002B8D8 /* NewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562220E299850002B8D8 /* NewsDataSource.swift */; };
 		E8E6563B20E299850002B8D8 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562320E299850002B8D8 /* ArticleViewModel.swift */; };
 		E8E6563C20E299850002B8D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562620E299850002B8D8 /* Constants.swift */; };
-		E8E6563D20E299850002B8D8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562820E299850002B8D8 /* Reachability.swift */; };
 		E8E6563E20E299850002B8D8 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562A20E299850002B8D8 /* DynamicValue.swift */; };
 		E8E6563F20E299850002B8D8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6562B20E299850002B8D8 /* Article.swift */; };
 		E8E6564520E299850002B8D8 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E6563520E299850002B8D8 /* NewsViewController.swift */; };
@@ -91,7 +90,6 @@
 		E8E6562220E299850002B8D8 /* NewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDataSource.swift; sourceTree = "<group>"; };
 		E8E6562320E299850002B8D8 /* ArticleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		E8E6562620E299850002B8D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E8E6562820E299850002B8D8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E8E6562A20E299850002B8D8 /* DynamicValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
 		E8E6562B20E299850002B8D8 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E8E6563520E299850002B8D8 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -311,7 +309,6 @@
 		E8E6562720E299850002B8D8 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				E8E6562820E299850002B8D8 /* Reachability.swift */,
 				E89B22F720E2E1DA00306525 /* Utils.swift */,
 			);
 			path = Utility;
@@ -580,10 +577,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NYTestApp/Pods-NYTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,7 +660,6 @@
 				E8ACE24920E2CF460050E5B4 /* RequestFactory.swift in Sources */,
 				E8ACE24A20E2CF460050E5B4 /* ParserHelper.swift in Sources */,
 				E8E6563E20E299850002B8D8 /* DynamicValue.swift in Sources */,
-				E8E6563D20E299850002B8D8 /* Reachability.swift in Sources */,
 				E8E6563C20E299850002B8D8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

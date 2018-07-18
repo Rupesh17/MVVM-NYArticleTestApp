@@ -7,6 +7,7 @@ target 'NYTestApp' do
 
   # Pods for NYTestApp
 	pod 'SDWebImage', '~> 4.0'
+    pod 'ReachabilitySwift'
 
   target 'NYTestAppTests' do
     inherit! :search_paths
