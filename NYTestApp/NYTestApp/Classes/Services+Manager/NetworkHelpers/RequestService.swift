@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import Reachability
 
 final class RequestService {
     
@@ -20,7 +20,7 @@ final class RequestService {
         
         var request = RequestFactory.request(method: .GET, url: url)
         
-        if let reachability = Reachability(), !reachability.isReachable {
+        if let reachability = Reachability(), reachability.connection == .none {
             request.cachePolicy = .returnCacheDataDontLoad
         }
         
