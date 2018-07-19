@@ -21,6 +21,20 @@ platform :ios do
     capture_screenshots(workspace: "NYTestApp.xcworkspace", scheme: "NYTestAppUITests")
   end
   lane :tests do
-	run_tests(workspace: "NYTestApp.xcworkspace", scheme: "NYTestAppTests")
+	scan(
+  workspace: "NYTestApp.xcworkspace",
+  scheme: "NYTestApp",
+  output_directory: "fastlane/test_output/",
+  clean: true,
+  code_coverage: true,
+  device: "iPhone 6s Plus",
+  output_types: "html"
+)
+sh "slather coverage --ignore '../../*' \
+  --html \
+  --scheme NYTestApp \
+  --workspace ../NYTestApp.xcworkspace \
+  --output-directory test_output/code_coverage/ \
+  ../NYTestApp.xcodeproj"
   end
 end

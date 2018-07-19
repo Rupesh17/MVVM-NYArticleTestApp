@@ -14,7 +14,6 @@ class NYTestAppUITests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -23,6 +22,7 @@ class NYTestAppUITests: XCTestCase {
         app = XCUIApplication()
         setupSnapshot(app)
         app.launch()
+
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -31,22 +31,40 @@ class NYTestAppUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testAppArticleListScreenUI() {
+    func testTableInteraction() {
+        // Assert that we are displaying the tableview
+        let cells = app.tables.cells
         snapshot("App Screenshot Launch with indicator")
-        snapshot("after load", waitForLoadingIndicator: true)
-        let cells = app.tables.cells
-        XCTAssertTrue(cells.count > 0)
-    }
-    
-    func testAppArticleDetailsScreenUIWithCell() {
-        let cells = app.tables.cells
+
+        // Get an array of cells
         if cells.count > 0 {
-            let firstCell = cells.element(boundBy: 0)
-            firstCell.tap()
-            snapshot("detail view")
-        }
-        else {
-            XCTAssertFalse(cells.count > 0)
+            snapshot("after load")
+            let count: Int = (cells.count - 1)
+            
+            let promise = expectation(description: "Wait for table cells")
+            
+            for i in stride(from: 0, to: count , by: 1) {
+                // Grab the first cell and verify that it exists and tap it
+                let tableCell = cells.element(boundBy: i)
+                
+                XCTAssertTrue(tableCell.exists, "The \(i) cell is in place on the table")
+                
+                // Does this actually take us to the next screen
+                tableCell.tap()
+                
+                if i == (count - 1) {
+                    snapshot("detail View")
+                    promise.fulfill()
+                }
+
+                // Back
+                app.navigationBars.buttons.element(boundBy: 0).tap()
+            }
+            
+            waitForExpectations(timeout: 50, handler: nil)
+            XCTAssertTrue(true, "Finished validating the table cells")
+        } else {
+            XCTAssert(false, "Was not able to find any table cells")
         }
     }
 }
