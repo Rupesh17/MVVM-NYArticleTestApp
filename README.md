@@ -35,6 +35,8 @@ App Screen Shots:
 
 ## CI/CD
 Xcode Server + Fastlane combination  is used for CI/CD.
+
+### XcodeServer with Bot
 * Xcode server is setup on local development machine with a new user
 * Xcode Bot is setup on development machine with git configration using master branch. Bot run periodically  once per-day and do the following task:
     * Pull changes from remote repository if there any.
@@ -45,18 +47,46 @@ Xcode Server + Fastlane combination  is used for CI/CD.
     * We did not setup for exporting the build or code-singing for now as iTunes
     credential required. Once credential is there we can setup these activity.
 
+
+### Fastlane
 Fastlane is setup on Xcode server and integrated in development project also for following activity (Lane):
-* Generating Test report
+* Generating Test reporta and coverage also using scan and slather.
 * Generating screen shot.
 * We did not setup code-singing for now as iTunesConnect credential required. Once credential is there we can setup these activity.
 
-    
-![alt text](https://user-images.githubusercontent.com/15336778/42815271-952b0cb2-89e4-11e8-81e4-f31ccf255bca.png)
+We used Xcode server post script to run fastlane lanes.
 
-![alt text](https://user-images.githubusercontent.com/15336778/42815274-95a5a576-89e4-11e8-9a32-5e065c256d13.png)
 
-![alt text](https://user-images.githubusercontent.com/15336778/42815273-955fe176-89e4-11e8-9341-6d99f4cbff8d.png)
+### XcodeServer_Reports
 
+* XcodeServer_Bot_Report
+
+![alt text](https://user-images.githubusercontent.com/15336778/42930280-2dc89450-8b5a-11e8-82c3-fb8129384b62.png)
+
+* XcodeServer_Bot_Code_Coverage_Report
+
+![alt text](https://user-images.githubusercontent.com/15336778/42930282-2e5e3e60-8b5a-11e8-9615-b3a005ff5696.png)
+
+* XcodeServer_Bot_Detail_Code_Coverage_Report
+
+![alt text](https://user-images.githubusercontent.com/15336778/42930279-2d7ae232-8b5a-11e8-9461-99e10d745060.png)
+
+* XcodeServer_Bot_Test_Report
+![alt text](https://user-images.githubusercontent.com/15336778/42930281-2e16e466-8b5a-11e8-9a95-b5e573076066.png)
+
+
+#### Fastlane ScreenShot report
+ 
+ *  Fastlane ScreenShot report
+ 
+![alt text](https://user-images.githubusercontent.com/15336778/42933613-cbed24ea-8b62-11e8-8af1-db7c84ba1d1c.png)
+
+* Fastlane + Scan + Slather  code coverage report
+
+![alt text](https://user-images.githubusercontent.com/15336778/42934536-184a6b52-8b65-11e8-862d-e86402d780d5.png)
+
+* Fastlane  test report
+![alt text](https://user-images.githubusercontent.com/15336778/42934478-f1da3484-8b64-11e8-8b9c-ed6ff1972d76.png)
 
 ## Running the tests manually 
 
