@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.8891891891891892" branch-rate="1.0000000000000000" lines-covered="329" lines-valid="370" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1531310689" version="Slather 2.4.5">
+  <sources>
+    <source>/Users/rupeshkumar/Documents/ProjectsCode/ClientProject/Personal/AIDB_SONAR_MASTER/NYArticleTestApp/NYTestApp</source>
+  </sources>
+  <packages>
+    <package name="NYTestApp.Classes.AppDelegate" line-rate="0.3333333333333333" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="AppDelegate" filename="NYTestApp/Classes/AppDelegate/AppDelegate.swift" line-rate="0.3333333333333333" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="false" hits="2"/>
+            <line number="18" branch="false" hits="2"/>
+            <line number="19" branch="false" hits="2"/>
+            <line number="20" branch="false" hits="2"/>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="2"/>
+            <line number="37" branch="false" hits="2"/>
+            <line number="38" branch="false" hits="2"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.CustomViews" line-rate="0.9696969696969697" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="ArticleTableViewCell" filename="NYTestApp/Classes/CustomViews/ArticleTableViewCell.swift" line-rate="0.9696969696969697" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="21" branch="false" hits="135"/>
+            <line number="22" branch="false" hits="135"/>
+            <line number="23" branch="false" hits="135"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="135"/>
+            <line number="26" branch="false" hits="135"/>
+            <line number="27" branch="false" hits="135"/>
+            <line number="28" branch="false" hits="135"/>
+            <line number="29" branch="false" hits="135"/>
+            <line number="30" branch="false" hits="135"/>
+            <line number="31" branch="false" hits="135"/>
+            <line number="32" branch="false" hits="134"/>
+            <line number="33" branch="false" hits="134"/>
+            <line number="34" branch="false" hits="134"/>
+            <line number="35" branch="false" hits="134"/>
+            <line number="36" branch="false" hits="134"/>
+            <line number="37" branch="false" hits="135"/>
+            <line number="38" branch="false" hits="135"/>
+            <line number="41" branch="false" hits="33"/>
+            <line number="42" branch="false" hits="33"/>
+            <line number="43" branch="false" hits="33"/>
+            <line number="44" branch="false" hits="33"/>
+            <line number="46" branch="false" hits="272"/>
+            <line number="47" branch="false" hits="272"/>
+            <line number="48" branch="false" hits="272"/>
+            <line number="49" branch="false" hits="272"/>
+            <line number="50" branch="false" hits="272"/>
+            <line number="53" branch="false" hits="135"/>
+            <line number="54" branch="false" hits="135"/>
+            <line number="55" branch="false" hits="135"/>
+            <line number="56" branch="false" hits="135"/>
+            <line number="57" branch="false" hits="135"/>
+            <line number="58" branch="false" hits="135"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.Models" line-rate="0.9574468085106383" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="Article" filename="NYTestApp/Classes/Models/Article.swift" line-rate="0.9285714285714286" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="4"/>
+            <line number="17" branch="false" hits="4"/>
+            <line number="18" branch="false" hits="41"/>
+            <line number="19" branch="false" hits="3"/>
+            <line number="20" branch="false" hits="3"/>
+            <line number="21" branch="false" hits="3"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="47"/>
+            <line number="38" branch="false" hits="47"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="47"/>
+            <line number="41" branch="false" hits="47"/>
+            <line number="42" branch="false" hits="47"/>
+            <line number="43" branch="false" hits="47"/>
+            <line number="44" branch="false" hits="47"/>
+            <line number="45" branch="false" hits="47"/>
+            <line number="46" branch="false" hits="47"/>
+            <line number="47" branch="false" hits="41"/>
+            <line number="48" branch="false" hits="47"/>
+            <line number="49" branch="false" hits="47"/>
+            <line number="50" branch="false" hits="47"/>
+            <line number="51" branch="false" hits="41"/>
+            <line number="52" branch="false" hits="41"/>
+            <line number="53" branch="false" hits="41"/>
+            <line number="54" branch="false" hits="47"/>
+            <line number="55" branch="false" hits="47"/>
+          </lines>
+        </class>
+        <class name="DynamicValue" filename="NYTestApp/Classes/Models/DynamicValue.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="5"/>
+            <line number="16" branch="false" hits="5"/>
+            <line number="17" branch="false" hits="5"/>
+            <line number="22" branch="false" hits="8"/>
+            <line number="23" branch="false" hits="8"/>
+            <line number="24" branch="false" hits="8"/>
+            <line number="26" branch="false" hits="2"/>
+            <line number="27" branch="false" hits="2"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="30" branch="false" hits="2"/>
+            <line number="31" branch="false" hits="2"/>
+            <line number="32" branch="false" hits="2"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="7"/>
+            <line number="36" branch="false" hits="7"/>
+            <line number="37" branch="false" hits="7"/>
+            <line number="39" branch="false" hits="6"/>
+            <line number="40" branch="false" hits="6"/>
+            <line number="41" branch="false" hits="6"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.Services+Manager.NetworkHelpers" line-rate="0.9032258064516129" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="RequestFactory" filename="NYTestApp/Classes/Services+Manager/NetworkHelpers/RequestFactory.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="18" branch="false" hits="3"/>
+            <line number="19" branch="false" hits="3"/>
+            <line number="20" branch="false" hits="3"/>
+            <line number="21" branch="false" hits="3"/>
+            <line number="22" branch="false" hits="3"/>
+          </lines>
+        </class>
+        <class name="RequestHandler" filename="NYTestApp/Classes/Services+Manager/NetworkHelpers/RequestHandler.swift" line-rate="0.8333333333333334" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="14" branch="false" hits="3"/>
+            <line number="15" branch="false" hits="3"/>
+            <line number="16" branch="false" hits="3"/>
+            <line number="17" branch="false" hits="3"/>
+            <line number="18" branch="false" hits="3"/>
+            <line number="19" branch="false" hits="2"/>
+            <line number="20" branch="false" hits="2"/>
+            <line number="21" branch="false" hits="2"/>
+            <line number="22" branch="false" hits="2"/>
+            <line number="23" branch="false" hits="2"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="2"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="29" branch="false" hits="3"/>
+            <line number="30" branch="false" hits="3"/>
+            <line number="31" branch="false" hits="3"/>
+          </lines>
+        </class>
+        <class name="RequestService" filename="NYTestApp/Classes/Services+Manager/NetworkHelpers/RequestService.swift" line-rate="0.8846153846153846" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="14" branch="false" hits="3"/>
+            <line number="15" branch="false" hits="3"/>
+            <line number="16" branch="false" hits="3"/>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="3"/>
+            <line number="20" branch="false" hits="3"/>
+            <line number="21" branch="false" hits="3"/>
+            <line number="22" branch="false" hits="3"/>
+            <line number="23" branch="false" hits="3"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="3"/>
+            <line number="26" branch="false" hits="3"/>
+            <line number="27" branch="false" hits="3"/>
+            <line number="28" branch="false" hits="3"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="30" branch="false" hits="1"/>
+            <line number="31" branch="false" hits="2"/>
+            <line number="32" branch="false" hits="2"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="34" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="2"/>
+            <line number="36" branch="false" hits="2"/>
+            <line number="37" branch="false" hits="3"/>
+            <line number="38" branch="false" hits="3"/>
+            <line number="39" branch="false" hits="3"/>
+          </lines>
+        </class>
+        <class name="ServiceHelper" filename="NYTestApp/Classes/Services+Manager/NetworkHelpers/ServiceHelper.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="34" branch="false" hits="3"/>
+            <line number="35" branch="false" hits="3"/>
+            <line number="36" branch="false" hits="3"/>
+            <line number="37" branch="false" hits="3"/>
+            <line number="38" branch="false" hits="3"/>
+            <line number="39" branch="false" hits="3"/>
+            <line number="41" branch="false" hits="4"/>
+            <line number="42" branch="false" hits="4"/>
+            <line number="43" branch="false" hits="4"/>
+            <line number="44" branch="false" hits="2"/>
+            <line number="45" branch="false" hits="4"/>
+            <line number="46" branch="false" hits="4"/>
+            <line number="47" branch="false" hits="4"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.Services+Manager" line-rate="0.9285714285714286" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="ParserHelper" filename="NYTestApp/Classes/Services+Manager/ParserHelper.swift" line-rate="0.9285714285714286" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="false" hits="4"/>
+            <line number="18" branch="false" hits="4"/>
+            <line number="19" branch="false" hits="4"/>
+            <line number="20" branch="false" hits="4"/>
+            <line number="21" branch="false" hits="4"/>
+            <line number="22" branch="false" hits="3"/>
+            <line number="23" branch="false" hits="3"/>
+            <line number="24" branch="false" hits="3"/>
+            <line number="25" branch="false" hits="3"/>
+            <line number="26" branch="false" hits="3"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="3"/>
+            <line number="30" branch="false" hits="3"/>
+            <line number="31" branch="false" hits="3"/>
+            <line number="32" branch="false" hits="3"/>
+            <line number="33" branch="false" hits="3"/>
+            <line number="34" branch="false" hits="3"/>
+            <line number="35" branch="false" hits="4"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="4"/>
+            <line number="39" branch="false" hits="4"/>
+            <line number="40" branch="false" hits="1"/>
+            <line number="41" branch="false" hits="1"/>
+            <line number="42" branch="false" hits="1"/>
+            <line number="43" branch="false" hits="3"/>
+            <line number="44" branch="false" hits="3"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.Utils.Utility" line-rate="0.8888888888888888" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="Utils" filename="NYTestApp/Classes/Utils/Utility/Utils.swift" line-rate="0.8888888888888888" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="41"/>
+            <line number="16" branch="false" hits="41"/>
+            <line number="17" branch="false" hits="41"/>
+            <line number="18" branch="false" hits="41"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="41"/>
+            <line number="22" branch="false" hits="41"/>
+            <line number="23" branch="false" hits="41"/>
+            <line number="26" branch="false" hits="135"/>
+            <line number="27" branch="false" hits="135"/>
+            <line number="28" branch="false" hits="135"/>
+            <line number="29" branch="false" hits="135"/>
+            <line number="30" branch="false" hits="135"/>
+            <line number="31" branch="false" hits="135"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="34" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.ViewControllers" line-rate="0.8510638297872340" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="NewsDetailUIViewController" filename="NYTestApp/Classes/ViewControllers/NewsDetailUIViewController.swift" line-rate="0.8461538461538461" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="20" branch="false" hits="19"/>
+            <line number="21" branch="false" hits="19"/>
+            <line number="22" branch="false" hits="19"/>
+            <line number="23" branch="false" hits="19"/>
+            <line number="24" branch="false" hits="19"/>
+            <line number="25" branch="false" hits="19"/>
+            <line number="27" branch="false" hits="19"/>
+            <line number="28" branch="false" hits="19"/>
+            <line number="29" branch="false" hits="19"/>
+            <line number="30" branch="false" hits="19"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="19"/>
+            <line number="38" branch="false" hits="19"/>
+            <line number="39" branch="false" hits="19"/>
+            <line number="51" branch="false" hits="19"/>
+            <line number="52" branch="false" hits="19"/>
+            <line number="53" branch="false" hits="19"/>
+            <line number="54" branch="false" hits="19"/>
+            <line number="55" branch="false" hits="19"/>
+            <line number="56" branch="false" hits="19"/>
+            <line number="57" branch="false" hits="19"/>
+            <line number="58" branch="false" hits="19"/>
+            <line number="59" branch="false" hits="19"/>
+          </lines>
+        </class>
+        <class name="NewsViewController" filename="NYTestApp/Classes/ViewControllers/NewsViewController.swift" line-rate="0.8529411764705882" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="20" branch="false" hits="2"/>
+            <line number="21" branch="false" hits="2"/>
+            <line number="22" branch="false" hits="2"/>
+            <line number="23" branch="false" hits="2"/>
+            <line number="25" branch="false" hits="2"/>
+            <line number="26" branch="false" hits="2"/>
+            <line number="27" branch="false" hits="2"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="29" branch="false" hits="2"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="34" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="2"/>
+            <line number="36" branch="false" hits="2"/>
+            <line number="37" branch="false" hits="2"/>
+            <line number="38" branch="false" hits="2"/>
+            <line number="39" branch="false" hits="2"/>
+            <line number="40" branch="false" hits="2"/>
+            <line number="41" branch="false" hits="2"/>
+            <line number="42" branch="false" hits="2"/>
+            <line number="43" branch="false" hits="2"/>
+            <line number="44" branch="false" hits="4"/>
+            <line number="45" branch="false" hits="4"/>
+            <line number="46" branch="false" hits="4"/>
+            <line number="47" branch="false" hits="2"/>
+            <line number="48" branch="false" hits="2"/>
+            <line number="49" branch="false" hits="2"/>
+            <line number="50" branch="false" hits="2"/>
+            <line number="53" branch="false" hits="2"/>
+            <line number="54" branch="false" hits="2"/>
+            <line number="55" branch="false" hits="2"/>
+            <line number="56" branch="false" hits="2"/>
+            <line number="57" branch="false" hits="2"/>
+            <line number="58" branch="false" hits="2"/>
+            <line number="59" branch="false" hits="2"/>
+            <line number="60" branch="false" hits="2"/>
+            <line number="61" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="2"/>
+            <line number="63" branch="false" hits="2"/>
+            <line number="64" branch="false" hits="2"/>
+            <line number="65" branch="false" hits="2"/>
+            <line number="66" branch="false" hits="2"/>
+            <line number="67" branch="false" hits="2"/>
+            <line number="70" branch="false" hits="0"/>
+            <line number="71" branch="false" hits="0"/>
+            <line number="72" branch="false" hits="0"/>
+            <line number="73" branch="false" hits="0"/>
+            <line number="74" branch="false" hits="0"/>
+            <line number="75" branch="false" hits="0"/>
+            <line number="76" branch="false" hits="0"/>
+            <line number="77" branch="false" hits="0"/>
+            <line number="78" branch="false" hits="0"/>
+            <line number="84" branch="false" hits="19"/>
+            <line number="85" branch="false" hits="19"/>
+            <line number="86" branch="false" hits="19"/>
+            <line number="88" branch="false" hits="19"/>
+            <line number="89" branch="false" hits="19"/>
+            <line number="90" branch="false" hits="19"/>
+            <line number="91" branch="false" hits="19"/>
+            <line number="92" branch="false" hits="19"/>
+            <line number="93" branch="false" hits="19"/>
+            <line number="94" branch="false" hits="19"/>
+            <line number="95" branch="false" hits="19"/>
+            <line number="97" branch="false" hits="268"/>
+            <line number="98" branch="false" hits="268"/>
+            <line number="99" branch="false" hits="268"/>
+            <line number="101" branch="false" hits="17"/>
+            <line number="102" branch="false" hits="17"/>
+            <line number="103" branch="false" hits="17"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="NYTestApp.Classes.ViewModels" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="ArticleCellViewModel" filename="NYTestApp/Classes/ViewModels/ArticleCellViewModel.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="20" branch="false" hits="43"/>
+            <line number="21" branch="false" hits="43"/>
+            <line number="22" branch="false" hits="43"/>
+            <line number="23" branch="false" hits="43"/>
+            <line number="24" branch="false" hits="43"/>
+            <line number="25" branch="false" hits="43"/>
+            <line number="26" branch="false" hits="43"/>
+          </lines>
+        </class>
+        <class name="ArticleViewModel" filename="NYTestApp/Classes/ViewModels/ArticleViewModel.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="8"/>
+            <line number="16" branch="false" hits="8"/>
+            <line number="17" branch="false" hits="8"/>
+            <line number="18" branch="false" hits="8"/>
+            <line number="20" branch="false" hits="5"/>
+            <line number="21" branch="false" hits="5"/>
+            <line number="22" branch="false" hits="5"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="4"/>
+            <line number="26" branch="false" hits="4"/>
+            <line number="27" branch="false" hits="4"/>
+            <line number="28" branch="false" hits="4"/>
+            <line number="29" branch="false" hits="4"/>
+            <line number="30" branch="false" hits="4"/>
+            <line number="31" branch="false" hits="4"/>
+            <line number="32" branch="false" hits="3"/>
+            <line number="33" branch="false" hits="3"/>
+            <line number="34" branch="false" hits="3"/>
+            <line number="35" branch="false" hits="3"/>
+            <line number="36" branch="false" hits="158"/>
+            <line number="37" branch="false" hits="3"/>
+            <line number="38" branch="false" hits="3"/>
+            <line number="39" branch="false" hits="3"/>
+            <line number="40" branch="false" hits="3"/>
+            <line number="41" branch="false" hits="4"/>
+            <line number="42" branch="false" hits="1"/>
+            <line number="43" branch="false" hits="1"/>
+            <line number="44" branch="false" hits="1"/>
+            <line number="45" branch="false" hits="1"/>
+            <line number="46" branch="false" hits="4"/>
+            <line number="47" branch="false" hits="4"/>
+            <line number="48" branch="false" hits="4"/>
+            <line number="49" branch="false" hits="4"/>
+            <line number="52" branch="false" hits="2"/>
+            <line number="53" branch="false" hits="2"/>
+            <line number="54" branch="false" hits="40"/>
+            <line number="55" branch="false" hits="40"/>
+            <line number="56" branch="false" hits="40"/>
+            <line number="57" branch="false" hits="40"/>
+            <line number="58" branch="false" hits="2"/>
+            <line number="59" branch="false" hits="2"/>
+            <line number="60" branch="false" hits="2"/>
+          </lines>
+        </class>
+        <class name="NewsDataSource" filename="NYTestApp/Classes/ViewModels/NewsDataSource.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="18" branch="false" hits="10"/>
+            <line number="19" branch="false" hits="10"/>
+            <line number="20" branch="false" hits="10"/>
+            <line number="22" branch="false" hits="116"/>
+            <line number="23" branch="false" hits="116"/>
+            <line number="24" branch="false" hits="116"/>
+            <line number="26" branch="false" hits="135"/>
+            <line number="27" branch="false" hits="135"/>
+            <line number="28" branch="false" hits="135"/>
+            <line number="29" branch="false" hits="135"/>
+            <line number="30" branch="false" hits="135"/>
+            <line number="31" branch="false" hits="135"/>
+            <line number="32" branch="false" hits="135"/>
+            <line number="33" branch="false" hits="135"/>
+            <line number="34" branch="false" hits="135"/>
+            <line number="35" branch="false" hits="135"/>
+            <line number="36" branch="false" hits="135"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

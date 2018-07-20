@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='NYTestAppUITests.xctest' tests='13' failures='0'>
+  <testsuite name='NYTestAppTests.ArticleViewModelTests' tests='3' failures='0'>
+    <testcase classname='NYTestAppTests.ArticleViewModelTests' name='testFetchArticles' time='0.179'/>
+    <testcase classname='NYTestAppTests.ArticleViewModelTests' name='testFetchNoArticles' time='0.001'/>
+    <testcase classname='NYTestAppTests.ArticleViewModelTests' name='testFetchWithNoService' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTestAppTests.NYTestAppTests' tests='2' failures='0'>
+    <testcase classname='NYTestAppTests.NYTestAppTests' name='testExample' time='0.001'/>
+    <testcase classname='NYTestAppTests.NYTestAppTests' name='testPerformanceExample' time='0.411'/>
+  </testsuite>
+  <testsuite name='NYTestAppTests.NewsDataSourceTests' tests='3' failures='0'>
+    <testcase classname='NYTestAppTests.NewsDataSourceTests' name='testEmptyValueInDataSource' time='0.003'/>
+    <testcase classname='NYTestAppTests.NewsDataSourceTests' name='testValueCell' time='0.002'/>
+    <testcase classname='NYTestAppTests.NewsDataSourceTests' name='testValueInDataSource' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTestAppTests.NewsDataTests' tests='3' failures='0'>
+    <testcase classname='NYTestAppTests.NewsDataTests' name='testParseEmptyNewsData' time='0.001'/>
+    <testcase classname='NYTestAppTests.NewsDataTests' name='testParseNewsData' time='0.002'/>
+    <testcase classname='NYTestAppTests.NewsDataTests' name='testWrongKeyNewsData' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTestAppTests.ServiceHelperTests' tests='1' failures='0'>
+    <testcase classname='NYTestAppTests.ServiceHelperTests' name='testCancelRequest' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTestAppUITests.NYTestAppUITests' tests='1' failures='0'>
+    <testcase classname='NYTestAppUITests.NYTestAppUITests' name='testTableInteraction' time='62.127'/>
+  </testsuite>
+</testsuites>
