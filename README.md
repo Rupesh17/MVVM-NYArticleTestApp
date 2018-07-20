@@ -4,8 +4,10 @@
 A simple app to hit the NY Times Most Popular Articles API and:
 * Show a list of articles newest first(sorted based on date)
 * Shows details when items on the list are tapped. 
+* Show Cached articles if network not available
 
-We'll be using the most viewed section of this API.
+
+We'll are using the most viewed section of this API.
 http://api.nytimes.com/svc/mostpopular/v2/mostviewed/{section}/{period}.json?apikey= sample-key To test this API, 
 For testAPI we used 
 * all-sections for the section path component in the URL
@@ -22,18 +24,17 @@ We are generating TestCase and Coverage report using three tools, you can opt ou
 
 &nbsp; 
 
-**App Screen Shots:**
+**App Flow:**
 
 &nbsp; 
 &nbsp; 
 
-![alt text](https://user-images.githubusercontent.com/15336778/42052619-db489406-7b2c-11e8-8235-f70d52de66af.png)
-
-![alt text](https://user-images.githubusercontent.com/15336778/42052611-d8fd002e-7b2c-11e8-83f8-fded1945c085.png)
-
-![alt text](https://user-images.githubusercontent.com/15336778/42052620-db949446-7b2c-11e8-8c70-36acb8cdab6a.png)
+<kbd >
+<img src="https://user-images.githubusercontent.com/15336778/42991237-9fabac38-8c22-11e8-920f-faa03d0d5572.gif">
+</kbd>
 
 &nbsp; 
+&nbsp;  
 
 ## Tools And Resources Used
 
@@ -46,16 +47,20 @@ We are generating TestCase and Coverage report using three tools, you can opt ou
 - [Slather](https://github.com/SlatherOrg/slather) - Generate test coverage reports for Xcode projects & hook it into CI.
 
 
-
-
 ## Library Used
 - [SDWebImage](https://github.com/rs/SDWebImage) - This library provides an async image downloader with cache support.
 Reachability.swift is a replacement for Apple's Reachability sample, re-written in Swift with closures.
 - [ReachabilitySwift ](https://github.com/ashleymills/Reachability.swift) - Reachability.swift is a replacement for Apple's Reachability sample, re-written in Swift with closures.
 
+## TODO
+* Sorting option for user to sort article based popularity, Date, Alphabetically 
+* Refresh articles using pull to refresh or refresh button.
+* Configure fastlane lanes/XcodeServerBot for build creation and provising and certificate managment.
+* Configure Fastlane  lanes for build upload on iTunesConnect.
 
+&nbsp; 
 
-## Installing
+# Installation
 
 * Installation by cloning the repository
 * Go to directory
@@ -226,7 +231,7 @@ fastlane tests
 &nbsp; 
 &nbsp; 
 
-##  SonarQube 
+##  SonarQube Integration
 
 This is also another tool integrated for check project code health reports.
 
@@ -259,17 +264,6 @@ Follow the steps to get test case reports:
 # Architecture
 
 We used MVVM :
-
-## Views
-The `Views` (or `ViewControllers` in this case) only responsability will be displaying the data provided by its `ViewModel`, and forwarding all events to their respective `ViewModel`.
-
-## ViewModel
-The `ViewModel` is the component in charge of managing the state of each view, and any processing necesary of the data to be displayed / submitted.
-
-Moreover, the VM communicates with `Services and DataManagers` to fetch the data necessary for its view. 
-
-## Models
-In project, models won't store business logic. They will only act as data stores..
 
 &nbsp; 
 &nbsp; 
