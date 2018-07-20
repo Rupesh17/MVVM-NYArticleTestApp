@@ -1,6 +1,5 @@
 # NYArticleTestApp
 
-&nbsp; 
 
 A simple app to hit the NY Times Most Popular Articles API and:
 * Show a list of articles newest first(sorted based on date)
@@ -17,9 +16,9 @@ We used MVVM Design pattern and swift generic approach to develop this applicati
 For CI/CD App using XcodeServer + Fastlane combination.
 
 We are generating TestCase and Coverage report using three tools, you can opt out any one as per your connivance:
-* XcodeServer TestCase and Coverage report.
-* Fastlane+scan+slather TestCase and Coverage reports.
-* SonarQube TestCase and Coverage reports.
+* **XcodeServer TestCase and Coverage report.**
+* **Fastlane+scan+slather TestCase and Coverage reports.**
+* **SonarQube TestCase and Coverage reports.**
 
 &nbsp; 
 
@@ -36,7 +35,7 @@ We are generating TestCase and Coverage report using three tools, you can opt ou
 
 &nbsp; 
 
-## Tools And Resources
+## Tools And Resources Used
 
 - [CocoaPods](https://cocoapods.org/) - CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects. It has over 33 thousand libraries and is used in over 2.2 million apps. CocoaPods can help you scale your projects elegantly.
 - [fastlane](https://docs.fastlane.tools/) - The easiest way to automate building and releasing your iOS and Android apps.
@@ -67,7 +66,7 @@ Reachability.swift is a replacement for Apple's Reachability sample, re-written 
 
 &nbsp; 
 
-# CI/CD : XcodeServer And Fastlane 
+# CI/CD 
 Xcode Server + Fastlane combination is used for CI/CD. Xcode server bots post script will be used to trigger fastlane lanes. We canrun them using terminal also.
 
 ## XcodeServer And XcodeServer Bot
@@ -259,10 +258,7 @@ Follow the steps to get test case reports:
 
 # Architecture
 
-We are going to use MVVM :
-
-## Models
-The models won't store business logic. They will only act as data stores..
+We used MVVM :
 
 ## Views
 The `Views` (or `ViewControllers` in this case) only responsability will be displaying the data provided by its `ViewModel`, and forwarding all events to their respective `ViewModel`.
@@ -271,6 +267,9 @@ The `Views` (or `ViewControllers` in this case) only responsability will be disp
 The `ViewModel` is the component in charge of managing the state of each view, and any processing necesary of the data to be displayed / submitted.
 
 Moreover, the VM communicates with `Services and DataManagers` to fetch the data necessary for its view. 
+
+## Models
+In project, models won't store business logic. They will only act as data stores..
 
 &nbsp; 
 &nbsp; 
