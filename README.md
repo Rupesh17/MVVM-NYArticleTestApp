@@ -60,7 +60,7 @@ Reachability.swift is a replacement for Apple's Reachability sample, re-written 
 
 &nbsp; 
 
-# Installing
+# Installation
 
 * Installation by cloning the repository
 * Go to directory
